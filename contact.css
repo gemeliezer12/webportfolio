@@ -40,7 +40,12 @@ html{
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     padding: 4px 20px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
 }
+
+
 
 .contact input, .contact textarea{
     width: 100%;
@@ -60,7 +65,7 @@ html{
 }
 
 .contact input::placeholder, .contact textarea::placeholder{
-    color: white;
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .contact textarea{
@@ -73,7 +78,7 @@ html{
 }
 
 .contact .alert{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-size: 16px;
     font-weight: 100;
 }
