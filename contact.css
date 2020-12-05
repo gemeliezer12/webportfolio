@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    overflow-y: hidden;
+}
+
+.contact .container{
+    background-color: rgb(11, 2, 6);
+    width: 340px;
+    margin: auto;
+    border: 2px solid rgba(193, 46, 102, 0.5);
+    border-radius: 12px;
+    padding: 20px 30px;
+    color: white;
+    text-align: center;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+}
+
+.contact p{
+    margin-bottom: 16px;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.contact .submit{
+    background-color: transparent;
+    border: 2px solid #B7245C;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 16px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    padding: 4px 20px;
+}
+
+.contact input, .contact textarea{
+    width: 100%;
+    background-color: transparent;
+    resize: vertical;
+    border: none;
+    border-bottom: 1px solid #B7245C;
+    margin-bottom: 16px;
+}
+
+.contact input{
+    height: 20px;
+}
+
+.contact input, .contact textarea{
+    color: white;
+}
+
+.contact input::placeholder, .contact textarea::placeholder{
+    color: white;
+}
+
+.contact textarea{
+    height: 80px;
+}
+
+.contact .submit:hover{
+    background-color: #B7245C;
+    color: #0b0206;
+}
+
+.contact .message{
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 20px;
+}

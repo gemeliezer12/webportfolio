@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+}
+
+.main{
+    z-index: 0;
+    transition: all 0.2s;
+}
+
+nav{
+    z-index: 20;
+}
+
+/* nav */
+
+nav{
+    position: fixed;
+    width: 100%;
+}
+
+.mobile-nav{
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-btn:hover{
+    background-color: #B7245C;
+    color: white;
+}
+
+.nav-btn:active{
+    background-color: #B7245C;
+    color: white;
+}
+
+.mobile-nav .container, .desktop-nav .container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-btn{
+    cursor: pointer;
+    padding: 8px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 50%;
+}
+
+nav .logo{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.desktop-nav{
+    transform: translateY(calc(-100% + 2px));
+    background-color: white;
+    transition: all 0.2s;
+    z-index: -10;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(183, 36, 92, 0.2);
+}
+
+main.show{
+    transform: translateY(267px);
+}
+
+.desktop-nav.show{
+    transform: translateY(0px);
+}
+
+.desktop-nav .logo{
+    display: none;
+}
+
+.desktop-nav .nav-list{
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    font-weight: 900;
+    
+}
+
+.nav-list li{
+    margin-bottom: 10px;
+}
+
+.nav-list a{
+    color: black;
+}
+
+/* home */
+
+.home{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.home-1{
+    font-size: 60px;
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 20px;
+}
+
+
+.home-2, .home-4{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.home .home-3{
+    width: 40%;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+.container{
+    width: 380px;
+    margin: auto;
+}
+
+/* about */
+
+.about img{
+    width: 50%;
+    margin: 12px;
+}
+
+.about{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.about-container{
+    background-color: #B7245C;
+    padding-bottom: 120px;
+    color: white;
+    padding-top: 40px;
+}
+
+.about-1{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.language{
+    margin-top: -80px;
+    background-color: white;
+    border: 2px solid rgba(193, 46, 102, 0.5);
+    border-radius: 12px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bolder;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.language p{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* projects */
+
+.projects{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.projects-1{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.projects-2{
+    font-size: 30px;
+}
+
+/* contact */
+
+
+.contact .container{
+    background-color: rgb(11, 2, 6);
+    width: 340px;
+    margin: auto;
+    border: 2px solid rgba(193, 46, 102, 0.5);
+    border-radius: 12px;
+    margin-bottom: -80px;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contact p{
+    margin-bottom: 16px;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.contact .submit{
+    background-color: transparent;
+    border: 2px solid #B7245C;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 16px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    padding: 4px 20px;
+}
+
+.contact .submit:hover{
+    background-color: #B7245C;
+    color: #0b0206;
+}
+
+/* footer */
+
+footer .container{
+    text-align: center;
+}
+
+footer .logo{
+    color: white;
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+footer .social{
+    margin-bottom: 40px;
+}
+
+footer i{
+    border-radius: 50%;
+    color: white;
+    margin: 0 10px;
+}
+
+footer{
+    background-color: #B7245C;
+    padding-top: 80px;
+    z-index: -10;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width:600px){
+    .contact form{
+        width: 510px;
+        padding: 30px 40px;
+    }
+
+    .contact form div{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact form div input{
+        width: calc(50% - 10px);
+    }
+
+    .container{
+        width: 570px;
+    }
+
+    .language img{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:800px){
+
+    .contact form{
+        width: 760px;
+    }
+
+    .container{
+        width: 760px;
+    }
+
+    .language img{
+        width: 30%;
+    }
+
+    .desktop-nav{
+        transform: translateY(0);
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .desktop-nav .logo{
+        display: block;
+    }
+
+    .desktop-nav .nav-list{
+        display: flex;
+        margin-right: 0;
+        font-size: 20px;
+    }
+
+    .nav-list li{
+        margin-left: 20px;
+    }
+
+    .mobile-nav{
+        display: none;
+    }
+
+    .nav-list li{
+        margin-bottom: 0;
+    }
+    
+    main.show{
+        transform: translateY(0);
+    }
+}
+
+@media screen and (min-width:1000px){
+    .container{
+        width: 900px;
+    }
+
+    .language img{
+        width: 20%;
+    }
+
+    .home .home-3{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .container{
+        width: 1180px;
+    }
+
+    .language img{
+        width: 15%;
+    }
+
+    .home .home-3{
+        width: 30%;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .container{
+        width: 1180px;
+    }
+
+    .language img{
+        width: 15%;
+    }
+s
+    .home .home-3{
+        width: 30%;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .container{
+        width: 1180px;
+    }
+
+    .language img{
+        width: 15%;
+    }
+
+    .home .home-3{
+        width: 30%;
+    }
+}
