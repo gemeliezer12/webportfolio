@@ -21,9 +21,10 @@ if (isset($_POST["submit"])){
         $body .= "From: ".$name. "\r\n";
         $body .= "Email: ".$mailFrom. "\r\n";
         $body .= "Message: ".$message. "\r\n";
+
+        mail($mailTo, $subject, $body);
         header("Location: ../contact.php?message-sent=true");
     }
-
 
 }
 

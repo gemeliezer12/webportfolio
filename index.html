@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="main.js"></script>
     <title>Document</title>
 </head>
 <body>
     <nav>
-        <div class="mobile-nav">
+        <div class="mobile-nav" id="mobile-nav">
             <div class="container">
                 <div class="logo">
                     <p>&lt;george/&gt;</p>
@@ -20,23 +21,23 @@
                 </div>
             </div>
         </div>
-        <div class="desktop-nav">
+        <div class="desktop-nav" id="desktop-nav">
             <div class="container">
                 <div class="logo">
                     <p>&lt;george/&gt;</p>
                 </div>
                 <ul class="nav-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li><a href="#">Resume</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <main class="main">
-        <section class="home">
+        <section class="home" id="home">
             <div class="container">
                 <p class="home-1">gem eliezer espiritu</p>
                 <p class="home-2">front end web developer</p>
@@ -44,7 +45,7 @@
                 <p class="home-4">Welcome to my portfolio</p>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="about-container">
                 <div class="container">
                     <p class="about-1">Hi, I'm Gem. Nice to meet you</p>
@@ -66,13 +67,13 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="container">
                 <p class="projects-1">Projects</p>
                 <p class="projects-2">Coming soon...</p>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <p>Get in touch</p>
                 <a href="contact.php" class="submit" type="submit">Contact Me</a>
