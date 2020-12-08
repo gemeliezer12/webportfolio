@@ -39,11 +39,6 @@ nav{
     color: white;
 }
 
-.nav-btn:active{
-    background-color: #B7245C;
-    color: white;
-}
-
 .mobile-nav .container, .desktop-nav .container{
     width: 90%;
     display: flex;
