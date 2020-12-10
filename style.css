@@ -29,8 +29,8 @@ nav{
 
 .mobile-nav{
     background-color: white;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    height: 60px;
+    display: flex;
 }
 
 
@@ -63,13 +63,15 @@ nav .logo{
     background-color: white;
     transition: all 0.2s;
     z-index: -10;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    height: 300px;
+    display: flex;
+    align-items: center;
     border-bottom: 2px solid rgba(183, 36, 92, 0.2);
 }
 
+
 main.show{
-    transform: translateY(267px);
+    transform: translateY(298px);
 }
 
 .desktop-nav.show{
@@ -299,8 +301,9 @@ footer{
 
     .desktop-nav{
         transform: translateY(0);
+        display: flex;
         align-items: center;
-        padding-top: 10px;
+        height: 60px;
     }
 
     .desktop-nav .logo{
