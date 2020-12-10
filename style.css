@@ -87,7 +87,12 @@ main.show{
     margin: auto;
     font-size: 30px;
     font-weight: 900;
-    
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-list{
+    margin-bottom: 20px;
 }
 
 .nav-list li{
@@ -213,6 +218,17 @@ main.show{
     font-size: 30px;
 }
 
+.contact .gmail{
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+
+.gmail a{
+    color: #B7245C;
+}
 .contact .submit{
     background-color: transparent;
     border: 2px solid #B7245C;
