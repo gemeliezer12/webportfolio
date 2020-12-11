@@ -322,12 +322,19 @@ footer{
         height: 60px;
     }
 
+    .desktop-nav .contact{
+        display: flex;
+    }
+
+
+
     .desktop-nav .logo{
         display: block;
     }
 
     .desktop-nav .nav-list{
         display: flex;
+        flex-direction: row;
         margin-right: 0;
         font-size: 20px;
     }
