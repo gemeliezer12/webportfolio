@@ -109,8 +109,7 @@ main.show{
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 120px;
-    padding-bottom: 60px;
+    padding-top: 60px;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -120,12 +119,17 @@ main.show{
     font-size: 60px;
     font-family: 'Titillium Web', sans-serif;
     margin-bottom: 20px;
+    line-height: 60px;
 }
 
 
 .home-2, .home-4{
     margin-bottom: 40px;
     font-size: 30px;
+}
+
+.home-4{
+    margin-bottom: 0;
 }
 
 .home .home-3{
