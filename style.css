@@ -111,6 +111,9 @@ main.show{
     text-transform: uppercase;
     padding-top: 120px;
     padding-bottom: 60px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .home-1{
