@@ -59,7 +59,8 @@ nav .logo{
 }
 
 .desktop-nav{
-    transform: translateY(calc(-100% + 2px));
+    transform: translateY(0px);
+    margin-top: -298px;
     background-color: white;
     transition: all 0.2s;
     z-index: -10;
@@ -75,7 +76,7 @@ main.show{
 }
 
 .desktop-nav.show{
-    transform: translateY(0px);
+    transform: translateY(calc(100% - 2px));
 }
 
 .desktop-nav .logo{
@@ -197,10 +198,40 @@ main.show{
 .projects-1{
     font-size: 40px;
     font-weight: 900;
+    margin-bottom: 32px;
 }
 
-.projects-2{
-    font-size: 30px;
+.projects-1 div{
+    display: flex;
+}
+
+.project-container{
+    border: 2px solid rgba(193, 46, 102, 0.5);
+    background: #B7245C;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 20px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.projects .title{
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+.projects .img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid rgba(193, 46, 102, 0.5);
+    margin-bottom: 20px;
 }
 
 /* contact */
@@ -316,6 +347,10 @@ footer{
     .language img{
         width: 50%;
     }
+
+    .project-container{
+        width: 45%;
+    }
 }
 
 @media screen and (min-width:800px){
@@ -334,6 +369,7 @@ footer{
 
     .desktop-nav{
         transform: translateY(0);
+        margin-top: 0;
         display: flex;
         align-items: center;
         height: 60px;
@@ -341,6 +377,10 @@ footer{
 
     .desktop-nav .contact{
         display: flex;
+    }
+
+    .desktop-nav.show{
+        transform: translateY(0%);
     }
 
 
@@ -372,6 +412,10 @@ footer{
     
     main.show{
         transform: translateY(0);
+    }
+
+    .project-container{
+        width: 30%;
     }
 }
 
